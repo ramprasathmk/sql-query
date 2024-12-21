@@ -1,1 +1,1 @@
-# Practices SQL Commands
+# Practices SQL Queries

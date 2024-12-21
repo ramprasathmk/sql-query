@@ -1,1 +1,1 @@
-# Practices SQL Queries
+# SQL Query Practices

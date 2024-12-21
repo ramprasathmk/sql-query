@@ -45,3 +45,4 @@ CREATE TABLE Likes (
 );
 
 -- table: Views
+-- use table Views if required

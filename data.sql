@@ -1,9 +1,9 @@
 -- insert the data here!
 
 -- Dumping Data for table: Users
-INSERT INTO Users(user_name, password) VALUES ('DaveGrey', 'dave123');
-INSERT INTO Users(user_name, password) VALUES ('JohnDoe', 'john123');
-INSERT INTO Users(user_name, password) VALUES ('Rahul', 'rahul123');
-INSERT INTO Users(user_name, password) VALUES ('Roger', 'roger111');
+INSERT INTO Users (username, name, password) VALUES ('davegrey', 'DaveGrey', '123456');
+INSERT INTO Users (username, name, password) VALUES ('johndoe', 'JohnDoe', '123456');
+INSERT INTO Users (username, name, password) VALUES ('rahul12', 'Rahul', '123456');
+INSERT INTO Users (username, name, password) VALUES ('roger11', 'Roger', '123456');
 
 -- Dumping Data for table: Quotes

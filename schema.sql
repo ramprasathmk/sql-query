@@ -19,10 +19,11 @@ USE quote_app;
 -- table: Users
 CREATE TABLE Users IF NOT EXISTS (
     id BIGINT UNIQUE NOT NULL AUTO_INCREMENT,
-    user_name VARCHAR(20) NOT NULL,
+    username VARCHAR(20) NOT NULL,
+    name VARCHAR(20) NOT NULL,
     password VARCHAR(20) NOT NULL,
     PRIMARY KEY (id)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- table: Quotes
 CREATE TABLE Quotes IF NOT EXISTS (
@@ -33,7 +34,7 @@ CREATE TABLE Quotes IF NOT EXISTS (
     created_year INT NOT NULL,
     PRIMARY KEY (ID),
     FOREIGN KEY (Author_id) REFERENCES Users (id)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- table: Likes
 CREATE TABLE Likes (
@@ -42,7 +43,7 @@ CREATE TABLE Likes (
     quote_id INT NOT NULL,
     PRIMARY KEY (id),
     FOREIGN KEY (quote_id) REFERENCES Quotes (id)
-);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- table: Views
 -- use table Views if required
